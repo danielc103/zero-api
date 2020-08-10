@@ -3,7 +3,7 @@ FROM node:alpine
 # add the website
 RUN mkdir -p /api-server
 WORKDIR /api-server
-COPY . .
+COPY server/. .
 
 # install npm dependencies
 RUN npm install
